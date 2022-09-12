@@ -12,6 +12,7 @@
  [POST]
  
  body:
+ ```json
  {
    "symbol": "BDOL" ,
    "price": 1.25,
@@ -20,7 +21,7 @@
    "created":"2017-09-08T19:01:55"
 
 }
-
+```
 This endpoint would simulate live data from a broker who would send live tick data to the services.
 
 Endpoint 2:
@@ -28,9 +29,11 @@ Endpoint 2:
 https://localhost:44386/api/stock/symbol
 
 body:
+```json
 {
    "symbolName":"BDOL"
 }
+```
 
 This endpoint simulates getting data from DB via it's ticker symbol.
 
@@ -40,6 +43,7 @@ https://localhost:44386/api/stock/allstocks?all=all
 
 This endpoint retrieves all stock details that are on the market
 e.g of results
+```json
 [
     {
         "stockSymbol": "BDOL",
@@ -63,12 +67,14 @@ e.g of results
         "stockDate": "2017-09-08T19:01:55"
     }
 ]
+```
 
 Endpoint 4:
 [GET]
 https://localhost:44386/api/stock/tickers
 
 body
+```json
 {
     "symbolName":[
         {
@@ -79,6 +85,7 @@ body
         }
     ]
 }
+```json
 
 This endpoints returns stock tickers base on a spexified range of ticker symbols.
 

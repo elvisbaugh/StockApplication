@@ -85,7 +85,7 @@ body
         }
     ]
 }
-```json
+```
 
 This endpoints returns stock tickers base on a spexified range of ticker symbols.
 
